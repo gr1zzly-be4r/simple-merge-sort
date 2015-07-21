@@ -10,12 +10,12 @@ class Sorter
 
     length = array.length
     p "length is #{length}"
-    if length < 2 then return end
+    if length == 2 then return end
     
     midpoint = length / 2
     # Split up the arrays
-    left_array = length % 2 == 0 ? array.slice(0..(midpoint - 1)) : array.slice(0..midpoint)
-    right_array = length % 2 == 0 ? array.slice(midpoint..length) : array.slice((midpoint + 1)..length)
+    left_array = array.slice(0..midpoint)
+    right_array = array.slice(midpoint..length)
 
     m_sort(left_array)
     m_sort(right_array)
