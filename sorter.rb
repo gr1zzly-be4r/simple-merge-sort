@@ -9,7 +9,6 @@ class Sorter
     if array.nil? then return end
 
     length = array.length
-    p "length is #{length}"
     if length == 2 then return end
     
     midpoint = length / 2
