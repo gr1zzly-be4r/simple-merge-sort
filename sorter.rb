@@ -1,7 +1,7 @@
 # Simple merge sorting algorithm
 class Sorter
   
-  def initialize()
+  def initialize
   end
 
   def m_sort(array)
